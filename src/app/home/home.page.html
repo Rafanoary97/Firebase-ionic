@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Puch Notification
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,23 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-item>
+    <ion-label>Emaill :</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mot de passe :</ion-label>
+    <ion-input [(ngModel)]="mdp"></ion-input>
+  </ion-item>
+  <div >
+    <ion-button (click)="logIn()" >LogIn</ion-button>
+  </div>
+  <div><p>{{email}}</p></div>
+  <div><p>{{mdp}}</p></div>
+
+
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button expand="full">Faire une puch notification</ion-button>
   </div>
 </ion-content>
